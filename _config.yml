@@ -1,0 +1,81 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink: "/:title"
+#relative_permalinks: true
+
+highlighter: pygments
+
+timezone: Asia/Shanghai
+
+# Default YAML frontmatter settings
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      comments: true
+
+
+# Tagging settings
+tag_title_prefix:   "Posts tagged #"
+tag_title_suffix:   ""
+
+# Facebook settings
+
+# Image settings
+image_base:          /public/images/
+
+# Do not copy these file to the output directory
+exclude: [README.md]
+
+# Setup
+title:               JUST FOR FUN LA
+tagline:             
+url:                 "http://kisimple.github.io"
+paginate:            10
+baseurl:             ""
+
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+
+# About/contact
+author:
+  name:              bozhu Zheng
+  url:               
+  email:             boshu.zheng@gmail.com
+
+# Custom vars
+version:             1.0.0
+github:
+  repo:              
+
+# Google sitemap generation
+gems:
+  - jekyll-sitemap
+
+# Conversion
+markdown:    redcarpet
+excerpt_separator: "<!--more-->"
+
+redcarpet:
+  extensions: ["footnotes"]
+
+kramdown:
+  auto_ids: true
+
+pages_list:
+  #About: '/about/'
+  #Tags:  '/tags/'
+  #Feed: '/atom.xml'
+
+picture:
+  source: "assets/imgs/_fullsize"
+  output: "generated"
+  markup: "picture"
+
